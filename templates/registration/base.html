@@ -1,0 +1,47 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Auth Demo</title>
+                <!-- Core CSS - Include with every page -->
+                <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <title>Photographers Gallery</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+                </head>
+                <body>
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Photographers Gallery</a>
+                            </div>
+
+                        </div>
+                    </nav>
+
+                {% block content %}
+                {% endblock %}
+
+
+                    <!-- Core Scripts - Include with every page -->
+                    <script src = "{% static 'js/jquery.min.js' %}"></script>
+                    <script src = "{% static 'js/bootstrap.min.js' %}"></script>
+        {% block javascript %}
+        {% endblock %}
+
+
+            </body>
+        </html>
