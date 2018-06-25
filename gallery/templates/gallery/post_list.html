@@ -5,7 +5,8 @@
     <div class="post">
 
         <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-        <p>Published Date: {{ post.published_date }}</p>
+        <img src="{{ MEDIA_URL }}{{ post.photo.url }}" height = "200" width="250" border="1"/>
+        <p><strong>Published Date:</strong> {{ post.published_date }}</p>
         <p>Photographer Name: {{ post.photographer_name }}</p>
         <p>Place: {{ post.photo_place }}</p>
         <p>Category: {{ post.category }}</p>

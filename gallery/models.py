@@ -5,6 +5,7 @@ from django.utils import timezone
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=255)
+    photo = models.ImageField(upload_to='albums')
     photographer_name = models.CharField(max_length=255)
     photo_place = models.CharField(max_length=255)
     category = models.CharField(max_length=255)

@@ -44,3 +44,19 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
+
+.img {
+    display: block;
+}
+.img.wrap {
+    max-width: 70%;
+    margin: 30px 0px;
+}
+.img.align-right {
+    float: right;
+    margin-left: 30px;
+}
+.img.align-left {
+    float: left;
+    margin-right: 30px;
+}
